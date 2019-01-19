@@ -8,9 +8,11 @@ class JoinGame extends Component{
 
     render(){
       return(
+          <header className = "App-header">
           <div className ="App">
 
           </div>
+          </header>
       )  
     }
 }
