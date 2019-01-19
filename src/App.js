@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
         <button type="button" class="btn btn-primary">Join Game</button>
         <p> </p>
-        <button type="button" class="btn btn-primary">Create Game</button>
+        <button type="button" class="btn btn-primary">HI ;) </button>
 
         </header>
       </div>
