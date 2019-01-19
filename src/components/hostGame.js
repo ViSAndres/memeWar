@@ -10,8 +10,13 @@ class HostGame extends Component {
         <div className="App">
         <header>
             <p>
-                Hey it works
+                Enter the session name
             </p>
+            <form action='/'method="POST">
+                <input class="input-form" type="text" name="sessionName"></input>
+                <button class ="submit" type="submit" value="Submit"></button>
+                
+            </form>
         </header>
 
         </div>
@@ -19,4 +24,4 @@ class HostGame extends Component {
 }
 }
 
-export default HostGame
+export default HostGame;

@@ -15,6 +15,7 @@ class App extends Component {
         <Route exact path="/hostgame" component={HostGame} />
       </Switch>
       </BrowserRouter>
+      
     );
   }
 }
