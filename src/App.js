@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import{ BrowserRouter, Route,Switch } from "react-router-dom";
-import Home from "./components/Home";
-import HostGame from "./components/hostGame"
-import JoinGame from "./components/joinGame"
+import Home from "./Components/Home";
+import HostGame from "./Components/hostGame"
+
 
 
 class App extends Component {
