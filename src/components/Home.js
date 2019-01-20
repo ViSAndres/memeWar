@@ -1,5 +1,6 @@
 import React,{Component} from "react";
-
+import "./Home.css";
+/*import '../../node_modules/bootstrap/dist/css/bootstrap.css';*/
 
 class Home extends Component {
     constructor(props){
@@ -8,9 +9,9 @@ class Home extends Component {
 
     render(){
     return (
-    <div className="App">
-
-        <header className="App-header">
+    <div>
+        <h1 class="Title">Meme Wars</h1>
+        <div class="buttons">
 
         <button onClick={() => this.props.history.push('/hostgame')} type="button" class="btn btn-primary">Host Game</button>
         <p>
@@ -21,7 +22,7 @@ class Home extends Component {
         
         
 
-        </header>
+        </div>
       </div>
     );
 };

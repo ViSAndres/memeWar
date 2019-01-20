@@ -1,6 +1,6 @@
 import React,{Component} from "react";
-import "./hostGame.css";
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import "./Home.css";
+/*import '../../node_modules/bootstrap/dist/css/bootstrap.css';*/
 class HostGame extends Component {
     constructor(props){
         super(props)
