@@ -16,7 +16,7 @@ class HostGame extends Component {
             <form action='/'method="POST">
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Session Name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="D@NK @$$ M3MEz"></input>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="D@NK @$$ M3MEz"></input>
                 </div>
             </form>
         </header>

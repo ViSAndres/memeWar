@@ -4,7 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import{ BrowserRouter, Route,Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import HostGame from "./Components/hostGame"
-
+import JoinGame from "./Components/joinGame"
 
 
 class App extends Component {
@@ -14,6 +14,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/" component = {Home} />
         <Route exact path="/hostgame" component={HostGame} />
+        <Route exact path="/joingame" component = {JoinGame}/>
       </Switch>
       </BrowserRouter>
       
