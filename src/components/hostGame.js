@@ -4,18 +4,19 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 class HostGame extends Component {
     constructor(props){
         super(props)
+
+        this.state= {
+            sessionName: null
+        }
     }
     render(){
     
     return(
         <div className="App">
         <header>
-            <p>
-                Enter the session name:
-            </p>
-            <form action='/'method="POST">
+            <form action='http://localhost:3001/session'method="POST">
                 <div class="form-group">
-                <label for="exampleFormControlInput1">Session Name</label>
+                <label for="exampleFormControlInput1">Session Name:</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="D@NK @$$ M3MEz"></input>
                 </div>
             </form>
