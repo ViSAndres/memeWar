@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser');
+const cors = require('cors');
 const app = express();
 const port = 3001;
 var names = ['John','Bob','Rob','Todd','Billy','Jack','Elton','Carlos'];
@@ -7,6 +8,7 @@ var session = {
     name : "",
     players : []
 }
+app.use(cors());
 
 app.listen(port);
 app.use(bodyparser.json());
@@ -21,9 +23,9 @@ app.post('/host', (req,res) =>{
         elim : false,
         played : false
     }
-    session.name = req.body;       
+    session.name = req.body.name;       
     session.players.push(player);
-    res.send(session.name);
+    res.json("success");
 })
 
 app.post('/join',(req,res)=> {
