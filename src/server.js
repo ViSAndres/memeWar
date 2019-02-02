@@ -48,4 +48,8 @@ app.post('/join',(req,res)=> {
     res.send('done');
 })
 
+app.get('/lobby',(req,res) => {
+    
+})
+
 console.log('server is running')

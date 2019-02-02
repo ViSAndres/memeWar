@@ -7,30 +7,31 @@ class HostGame extends Component {
         this.state = {
             input: '',
         }
+        getInput = (e) => {
+            this.setState({input: e.target.value});
+        }
+    
+        submitHost = async () => {
+            const {input} = this.state;
+    
+            if(input.length > 0) {
+                try{
+                    const response = await axios.post('http://localhost:3001/host', {
+                        name: input
+                    });
+                    console.log(response);
+                    //redirect here to lobby;
+    
+                } catch(e) {
+                    console.log(e);
+                }
+            }
+    
+        }
        
     }
 
-    getInput = (e) => {
-        this.setState({input: e.target.value});
-    }
-
-    submitHost = async () => {
-        const {input} = this.state;
-
-        if(input.length > 0) {
-            try{
-                const response = await axios.post('http://localhost:3001/host', {
-                    name: input
-                });
-                console.log(response);
-                //redirect here to lobby;
-
-            } catch(e) {
-                console.log(e);
-            }
-        }
-
-    }
+    
     render(){
     
     return(
